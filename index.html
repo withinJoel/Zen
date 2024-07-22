@@ -34,6 +34,15 @@
   <canvas id="renderCanvas"></canvas>
 </body>
 <script>
+  // Create a new audio element
+  var audio = new Audio('Audio/Birds.mp3'); // Replace with the path to your audio file
+
+  // Set properties
+  audio.loop = true;   // Loop the audio
+  audio.autoplay = true; // Start playing immediately
+
+  // Append the audio element to the body (optional)
+  document.body.appendChild(audio);
   const cubeSize = 500;
   var canvas = document.getElementById("renderCanvas");
   var engine = new BABYLON.Engine(canvas, true, {
@@ -130,15 +139,6 @@
   window.addEventListener("resize", () => {
     engine.resize();
   });
-  // Create a new audio element
-  var audio = new Audio('Audio/Birds.mp3'); // Replace with the path to your audio file
-
-  // Set properties
-  audio.loop = true;   // Loop the audio
-  audio.autoplay = true; // Start playing immediately
-
-  // Append the audio element to the body (optional)
-  document.body.appendChild(audio);
 </script>
 
 </html>
