@@ -11,6 +11,9 @@ HTML, CSS and JS
 ## 📦 Installation
 * run `npx -y serve .`
 
+## 🖥️ Website
+* `https://zen-bz1.pages.dev/`
+
 ## 🤝 Contributing
 * Want to improve Zen? PRs are welcome!
 
